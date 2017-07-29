@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                 xmlns:tools="http://schemas.android.com/tools" android:orientation="vertical"
+              android:layout_width="match_parent" android:id="@+id/rellayout"
+              android:layout_height="match_parent" android:background="@drawable/layout_background">
+    <TextView
+            android:text="Create a new user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="39dp" android:id="@+id/textView"
+            android:textSize="24sp" tools:ignore="HardcodedText"
+            android:textAllCaps="true"
+            android:textColor="@android:color/background_light"
+            android:layout_alignParentTop="true" android:layout_centerHorizontal="true"/>
+    <TextView
+            android:text="Username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView2"
+            android:layout_marginTop="45dp" android:textColor="@android:color/background_light"
+            android:textSize="18sp" android:layout_below="@+id/textView" android:layout_centerHorizontal="true"/>
+    <TextView
+            android:text="Password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_below="@+id/userEdit"
+            android:layout_centerHorizontal="true" android:id="@+id/textView3" android:textSize="18sp"
+            android:textColor="@android:color/background_light"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/passEdit"
+            android:layout_below="@+id/textView3" android:layout_alignStart="@+id/userEdit"
+            android:layout_alignEnd="@+id/userEdit"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_below="@+id/passEdit"
+            android:layout_centerHorizontal="true" android:id="@+id/textView4" android:textSize="18sp"
+            android:textColor="@android:color/background_light" android:text="Name"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/nameEdit" android:layout_below="@+id/textView4"
+            android:layout_alignStart="@+id/passEdit" android:layout_alignEnd="@+id/passEdit"/>
+    <TextView
+            android:text="Surname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_below="@+id/nameEdit"
+            android:layout_centerHorizontal="true" android:id="@+id/textView11" android:textSize="18sp"
+            android:textColor="@android:color/background_light"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/surnameEdit"
+            android:layout_below="@+id/textView11" android:layout_alignStart="@+id/nameEdit"/>
+    <Button
+            android:text="Create User"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp" android:id="@+id/createButton"
+            android:textSize="18sp" android:textColor="@android:color/background_light"
+            android:textStyle="normal|bold" android:onClick="create"
+            style="@android:style/Widget.DeviceDefault.Button.Borderless" android:layout_below="@+id/surnameEdit"
+            android:layout_centerHorizontal="true" android:textAllCaps="true"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/userEdit"
+            android:selectAllOnFocus="false"
+            android:layout_below="@+id/textView2" android:layout_centerHorizontal="true"/>
+</RelativeLayout>

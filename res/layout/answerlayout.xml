@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <ImageView
+            android:src="@drawable/tickfilled"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/correctimg"
+            android:layout_below="@+id/votedimg" android:layout_toStartOf="@+id/fullanswer"/>
+    <TextView
+            android:text="username321"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/answeredBy"
+            android:textStyle="normal|italic"
+            android:textColor="@android:color/background_light" android:layout_above="@+id/correctimg"
+            android:layout_alignStart="@+id/fullanswer"/>
+    <TextView
+            android:text="Here is my answer to this question. I'm typing more now to wrap this."
+            android:layout_height="wrap_content"
+            android:id="@+id/fullanswer"
+            android:layout_width="280dp"
+            android:textColor="@android:color/background_light"
+            android:layout_marginEnd="16dp" android:layout_below="@+id/answeredBy" android:layout_alignParentEnd="true"/>
+    <ImageView
+            android:src="@drawable/unfilled"
+            android:id="@+id/votedimg" android:onClick="doList"
+            android:layout_width="20dp" android:layout_height="20dp"
+            android:layout_alignParentTop="true" android:layout_alignStart="@+id/correctimg"/>
+    <TextView
+            android:text="10"
+            android:layout_height="wrap_content"
+            android:textStyle="normal|bold"
+            android:layout_width="35dp" android:id="@+id/voteText"
+            android:gravity="right"
+            android:textColor="@android:color/background_light"
+            android:layout_above="@+id/correctimg" android:layout_toStartOf="@+id/correctimg"/>
+</RelativeLayout>
